@@ -1,0 +1,5 @@
+<div class="container  text-center mt-5 mb-5" *ngIf="activeCounter !== undefined">
+  <h2>{{activeCounter.name}}</h2>
+  <h1><span class="badge bg-secondary">{{activeCounter.count}}</span></h1>
+  <button type="button" class="btn btn-secondary" (click)="increaseCount()">Count</button>
+</div>

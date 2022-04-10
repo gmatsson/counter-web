@@ -1,0 +1,6 @@
+<div class="container-sm">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let counter of counters | async" (click)="selectFunction(counter)" [ngClass]="{active: isActive(counter)}">{{counter.name}} {{counter.count}} </li>
+  </ul>
+ <!-- <button class="btn btn-outline-secondary" (click)="deleteCounter()" type="button" id="button-addon2">Delete</button>-->
+</div>
